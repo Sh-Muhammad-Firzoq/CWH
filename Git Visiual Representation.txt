@@ -1,0 +1,291 @@
+git init
+git add .
+git status
+git commit -m 'first commit'
+git branch -M main
+git remote add origin <repo_url>
+git push origin main
+
+
+
+
+
+git branch
+
+//create new branch
+git branch new_branch
+
+//to switch that branch
+
+git checkout new_branch
+
+
+
+
+Visiual Representation:
+
+PS C:\Users\AD\Desktop\VS Code> ls
+
+
+    Directory: C:\Users\AD\Desktop\VS Code
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         15-Sep-23   2:45 AM                .vscode
+d-----         12-Oct-23  12:30 PM                fonts
+d-----         15-Nov-23  12:26 PM                im
+d-----         05-Oct-23   2:39 PM                javascripts
+d-----         16-Nov-23  12:06 AM                organza
+d-----         30-Sep-23  12:33 AM                scripts
+d-----         15-Nov-23  11:22 AM                stylesheets
+-a----         05-Oct-23   2:37 PM            912 Chapter2 Excercise.js
+-a----         12-Oct-23   2:24 PM           2467 CSSLecture1.css
+-a----         13-Oct-23  12:35 PM           1571 CSSLecture1.html
+-a----         10-Oct-23   7:23 PM            153 CSSLecture1.js
+-a----         11-Oct-23   1:04 PM             55 CSSlecture1fonts,css.txt
+-a----         02-Nov-23  12:37 PM           3747 CSSPractice.html
+-a----         13-Oct-23   1:56 PM           1150 CssPractice1.html
+-a----         15-Nov-23  11:34 PM            493 CSSPractice10.html
+-a----         13-Oct-23   2:41 PM           1680 CssPractice2.html
+-a----         02-Nov-23  12:54 PM           4498 CssPractice3.html
+-a----         16-Oct-23   1:35 PM           1660 CSSPractice4.html
+-a----         18-Oct-23  12:45 PM           1429 CSSPractice5.html
+-a----         02-Nov-23   1:56 PM           1884 CSSpractice6.html
+-a----         06-Nov-23   2:49 PM           2183 CSSpractice7.html
+-a----         07-Nov-23   4:06 PM           1527 CSSPractice8.html
+-a----         13-Nov-23  12:35 PM           1049 CSSPractice9.html
+-a----         26-Sep-23   8:38 PM            476 dateandtime.html
+-a----         08-Sep-23   4:00 PM           6011 index.html
+-a----         15-Sep-23   3:19 AM           1265 index10.html
+-a----         15-Sep-23   5:25 PM           2995 index11.html
+-a----         12-Oct-23   1:46 PM           2202 index12.html
+-a----         19-Sep-23   8:58 AM            995 index13.html
+-a----         18-Sep-23   3:03 PM            453 index14.html
+-a----         20-Sep-23   6:10 PM           2040 index15.html
+-a----         19-Sep-23  11:35 AM            616 index16.html
+-a----         12-Oct-23   1:31 PM           1758 index17.html
+-a----         07-Sep-23   3:53 PM            386 index2.html
+-a----         05-Sep-23   1:36 PM            207 index3.html
+-a----         11-Sep-23   3:58 PM           3180 index4.html
+-a----         13-Sep-23   9:56 AM           1074 index5.html
+-a----         13-Sep-23   6:52 AM            918 index6.html
+-a----         13-Sep-23   7:33 PM           1537 index7.html
+-a----         14-Sep-23  10:14 PM            962 index8.html
+-a----         14-Sep-23   3:44 PM            405 index9.html
+-a----         08-Sep-23   3:55 PM           1542 Style.css
+-a----         15-Sep-23  12:11 PM           1004 style10.css
+-a----         15-Sep-23  12:16 PM            189 style11.css
+-a----         19-Sep-23  10:12 AM            408 style15.css
+-a----         11-Sep-23  10:37 PM            931 Style4.css
+-a----         13-Sep-23   6:58 AM            399 style5.css
+-a----         12-Sep-23   3:17 PM            464 style6.css
+-a----         14-Sep-23   5:05 PM            955 style8.css
+-a----         14-Sep-23   6:59 PM            551 style9.css
+
+
+PS C:\Users\AD\Desktop\VS Code\organza> git -v
+git version 2.42.0.windows.2
+Initialized empty Git repository in C:/Users/AD/Desktop/VS Code/organza/.git/
+PS C:\Users\AD\Desktop\VS Code\organza> git add .
+PS C:\Users\AD\Desktop\VS Code\organza> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.html
+
+PS C:\Users\AD\Desktop\VS Code\organza> git commit -m 'first commit'
+Author identity unknown
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+PS C:\Users\AD\Desktop\VS Code\organza> git config --global user.email "firzoqamir@gmail.com"
+PS C:\Users\AD\Desktop\VS Code\organza> git config --global user.name "Sh-Muhammad-Firzoq"
+PS C:\Users\AD\Desktop\VS Code\organza> git status
+
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.html
+
+[master (root-commit) bdeddb1] first commit
+ 1 file changed, 115 insertions(+)
+ create mode 100644 main.html
+PS C:\Users\AD\Desktop\VS Code\organza> git status
+On branch master
+git: 'logs' is not a git command. See 'git --help'.
+        log
+PS C:\Users\AD\Desktop\VS Code\organza> git log
+Author: Sh-Muhammad-Firzoq <firzoqamir@gmail.com>
+Date:   Thu Nov 16 00:12:55 2023 +0500
+
+    first commit
+PS C:\Users\AD\Desktop\VS Code\organza> git branch -M main
+PS C:\Users\AD\Desktop\VS Code\organza> git branch
+* main
+PS C:\Users\AD\Desktop\VS Code\organza> git remote add origin https://github.com/Sh-Muhammad-Firzoq/organza_price_cal.git
+PS C:\Users\AD\Desktop\VS Code\organza> git remote -v
+origin  https://github.com/Sh-Muhammad-Firzoq/organza_price_cal.git (fetch)
+PS C:\Users\AD\Desktop\VS Code\organza> git push -u origin main
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 1.25 KiB | 426.00 KiB/s, done.
+To https://github.com/Sh-Muhammad-Firzoq/organza_price_cal.git
+ * [new branch]      main -> main
+PS C:\Users\AD\Desktop\VS Code\organza> git branch
+PS C:\Users\AD\Desktop\VS Code\organza> git branch feature
+  feature
+PS C:\Users\AD\Desktop\VS Code\organza> git checkout feature
+Switched to branch 'feature'
+PS C:\Users\AD\Desktop\VS Code\organza> git branch
+  main
+PS C:\Users\AD\Desktop\VS Code\organza> git checkout dev    
+error: pathspec 'dev' did not match any file(s) known to git
+PS C:\Users\AD\Desktop\VS Code\organza> git checkout feature_dev
+error: pathspec 'feature_dev' did not match any file(s) known to git
+PS C:\Users\AD\Desktop\VS Code\organza> git checkout -b feature_dev
+Switched to a new branch 'feature_dev'
+PS C:\Users\AD\Desktop\VS Code\organza> git branch
+  feature
+* feature_dev
+PS C:\Users\AD\Desktop\VS Code\organza> ls
+
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         12-Nov-23   2:50 PM           4406 main.html
+
+PS C:\Users\AD\Desktop\VS Code\organza> git branch 
+  feature
+  main
+PS C:\Users\AD\Desktop\VS Code\organza> git add .
+PS C:\Users\AD\Desktop\VS Code\organza> git status
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.html
+PS C:\Users\AD\Desktop\VS Code\organza> git commit -m 'title changed'
+[feature_dev 9507782] title changed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\AD\Desktop\VS Code\organza> git pull origin main
+From https://github.com/Sh-Muhammad-Firzoq/organza_price_cal
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\AD\Desktop\VS Code\organza> git branch
+  feature
+* feature_dev
+  main
+PS C:\Users\AD\Desktop\VS Code\organza> git push origin feature_dev
+Enumerating objects: 5, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote:      https://github.com/Sh-Muhammad-Firzoq/organza_price_cal/pull/new/feature_dev
+To https://github.com/Sh-Muhammad-Firzoq/organza_price_cal.git
+PS C:\Users\AD\Desktop\VS Code\organza> git checkout main
+Switched to branch 'main'
+PS C:\Users\AD\Desktop\VS Code\organza> git branch
+  feature
+  feature_dev
+PS C:\Users\AD\Desktop\VS Code\organza> git checkout feature_dev
+Switched to branch 'feature_dev'
+PS C:\Users\AD\Desktop\VS Code\organza> git checkout maiin
+error: pathspec 'maiin' did not match any file(s) known to git
+PS C:\Users\AD\Desktop\VS Code\organza> git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\AD\Desktop\VS Code\organza> git branch
+  feature
+  feature_dev
+* main
+PS C:\Users\AD\Desktop\VS Code\organza> git pull -u origin main  
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --rebase[=(false|true|merges|interactive)]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --signoff[=...]       add a Signed-off-by trailer
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify              control use of pre-merge-commit and commit-msg hooks
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --show-forced-updates check for forced-updates on all updated branches
+    --set-upstream        set upstream for git pull/fetch
+
+PS C:\Users\AD\Desktop\VS Code\organza> git pull origin main   
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 637 bytes | 70.00 KiB/s, done.
+From https://github.com/Sh-Muhammad-Firzoq/organza_price_cal
+ * branch            main       -> FETCH_HEAD
+   bdeddb1..8721fd7  main       -> origin/main
+Updating bdeddb1..8721fd7
+Fast-forward
+ main.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\AD\Desktop\VS Code\organza> 
+
+
+OR
+
+git checkout -b new_branch
+
